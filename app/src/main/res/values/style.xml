@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    ...
+    <!-- Customize your theme here. -->
+    <style name="Button1Style" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#FFCCBC</item>
+        <item name="colorButtonNormal">#FF5722</item>
+    </style>
+    <style name="Button2Style" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#E0F2F1</item>
+        <item name="colorButtonNormal">#009688</item>
+    </style>
+    <style name="Button3Style" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">#E91E63</item>
+        <item name="colorControlHighlight">#FCE4EC</item>
+    </style>
+
+    <style name="time_picker_dialog_style_light" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/orange_100</item>
+    </style>
+
+    </resources>

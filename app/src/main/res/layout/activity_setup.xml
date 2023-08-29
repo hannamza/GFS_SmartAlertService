@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:background="#e9e9e9e9">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left" >
+            <ImageView
+                android:id="@+id/ImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="fitStart"
+                android:adjustViewBounds="true"
+                android:layout_weight="1"
+                android:src="@drawable/top_left" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.65"
+            android:gravity="center" >
+            <ImageView
+                android:id="@+id/ImageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:src="@drawable/top_title" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right" >
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/title"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:background="@drawable/setup_title1"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:src="@drawable/setup_title" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/setup_title2"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/setup_title3"
+            android:gravity="right">
+            <ImageButton
+                android:id="@+id/closeButton"
+                android:background="@drawable/setup_title3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/setup_save_templete"
+                android:scaleType="fitStart"
+                android:gravity="left" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/setup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title1"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:background="@drawable/setup_menu1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp" >
+            <Switch
+                android:id="@+id/switch0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/alarm_title"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:thumb="@drawable/switch_thumb_selector"
+                android:track="@drawable/switch_track_selector" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="                               "
+                android:layout_weight="4.5" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/setup_line"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/setup_menu2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" >
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/fire_alarm_name"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:thumb="@drawable/switch_thumb_selector"
+                android:track="@drawable/switch_track_selector" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="                               "
+                android:layout_weight="4.5" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/setup_menu2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" >
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/gas_alarm_name"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:thumb="@drawable/switch_thumb_selector"
+                android:track="@drawable/switch_track_selector" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="                               "
+                android:layout_weight="4.5" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/setup_menu2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" >
+            <Switch
+                android:id="@+id/switch3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/survaillance_alarm_name"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:thumb="@drawable/switch_thumb_selector"
+                android:track="@drawable/switch_track_selector" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="                               "
+                android:layout_weight="4.5" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/setup_menu2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" >
+            <Switch
+                android:id="@+id/switch4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/disconnection_alarm_name"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:thumb="@drawable/switch_thumb_selector"
+                android:track="@drawable/switch_track_selector" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="                               "
+                android:layout_weight="4.5" />
+        </LinearLayout>
+        <LinearLayout
+        android:background="@drawable/setup_menu2"
+        android:layout_width="match_parent"
+        android:paddingLeft="60dp"
+        android:layout_height="45dp" >
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:button="@drawable/radio_selector"
+                android:text="@string/time_setting_name"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:id="@+id/startTime"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:background="#FF5722"
+                android:text="09:00"
+                android:textColor="#ffffff"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ~ "
+                android:textColor="#252525"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:id="@+id/endTime"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:background="#FF5722"
+                android:text="18:00"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/setup_line"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:background="@drawable/setup_menu1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="left"
+                android:text="@string/text_scale_title"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/setup_menu2"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:layout_width="313dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/radio_selector"
+                    android:gravity="left"
+                    android:text="@string/text_scale_midium_name"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:button="@drawable/radio_selector"
+                    android:gravity="center"
+                    android:text="@string/text_scale_large_name"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:button="@drawable/radio_selector"
+                    android:text="@string/text_scale_extra_large_name"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/setup_line"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" >
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout4"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:background="@drawable/setup_menu1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="left"
+                android:text="@string/user_verification_title"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/setup_menu1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center" >
+            <EditText
+                android:id="@+id/phone_edit"
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:inputType="textPhonetic"
+                android:ems="10"
+                android:textColor="#111111"
+                android:textSize="18sp"
+                android:textColorHint="#939393"
+                android:backgroundTint="#333333"
+                android:hint="@string/telephone_input_hint"
+                android:textAlignment="center"/>
+            <Button
+                android:id="@+id/send_phone"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="true"
+                android:background="#FF5722"
+                android:textColor="#FFFFFF"
+                android:text="@string/telephone_input_button_text" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/setup_menu1"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center" >
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/setup_menu1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center" >
+            <ImageButton
+                android:id="@+id/f3menualdown"
+                android:layout_width="163dp"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@drawable/f3manual_down_templete" />
+            <ImageButton
+                android:id="@+id/usermenualdown"
+                android:layout_width="163dp"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@drawable/usermanual_down_templete" />
+        </LinearLayout>
+        <!--<LinearLayout
+            android:background="@drawable/setup_menu1"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center" >
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/setup_menu1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center" >
+            <EditText
+                android:id="@+id/phone_edit"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:ems="10"
+                android:inputType="textPhonetic"
+                android:hint="전화번호 입력 ('-' 제외, 숫자만)"/>
+            <Button
+                android:id="@+id/send_phone"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@color/colorPrimary"
+                android:text="토큰 전송" />
+        </LinearLayout>-->
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/setup2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/setup1"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:background="@drawable/setup_menu1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/setup_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center" >
+        </LinearLayout>
+    </LinearLayout>
+    <!--<LinearLayout
+        android:id="@+id/setup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setup1"
+        android:layout_marginTop="452dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/setup1">
+
+        <LinearLayout
+            android:id="@+id/layout_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_temp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>-->
+</LinearLayout>

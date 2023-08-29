@@ -1,0 +1,2 @@
+rootProject.name = "GFS_SmartAlertService"
+include ':app'

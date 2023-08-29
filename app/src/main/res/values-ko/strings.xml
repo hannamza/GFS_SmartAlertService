@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GFS 스마트알림서비스</string>
+    <string name="alarm_title">알림</string>
+    <string name="fire_alarm_name">화재 알림</string>
+    <string name="gas_alarm_name">가스 알림</string>
+    <string name="survaillance_alarm_name">감시 알림</string>
+    <string name="disconnection_alarm_name">단선 알림</string>
+    <string name="time_setting_name">시간 설정</string>
+    <string name="text_scale_title">텍스트 크기</string>
+    <string name="text_scale_midium_name">일반</string>
+    <string name="text_scale_large_name">크게</string>
+    <string name="text_scale_extra_large_name">매우 크게</string>
+    <string name="user_verification_title">사용자 인증</string>
+    <string name="telephone_input_hint">"전화번호 입력 (- 제외)"</string>
+    <string name="telephone_input_button_text">인증</string>
+    <string name="fire_alarm_text">화재 발생</string>
+    <string name="fire_restoration_alarm_text">화재 복구</string>
+    <string name="gas_alarm_text">가스 발생</string>
+    <string name="gas_restoration_alarm_text">가스 복구</string>
+    <string name="survaillance_alarm_text">감시 발생</string>
+    <string name="survaillance_restoration_alarm_text">감시 복구</string>
+    <string name="disconnection_alarm_text">단선 발생</string>
+    <string name="disconnection_restoration_alarm_text">단선 복구</string>
+    <string name="restoration_completed_text">복구 완료</string>
+    <string name="end_of_list_text">이전 내역이 존재하지 않습니다.</string>
+    <string name="user_verification_text_1">전화 번호를 입력하여 주십시오.</string>
+    <string name="user_verification_text_2">사용자 인증</string>
+    <string name="user_verification_text_3_1">사용자 인증 정보 (전화번호)를 전송합니다.</string>
+    <string name="user_verification_text_3_2">인증 정보는 암호화되어 안전하게 전송됩니다.</string>
+    <string name="user_verification_text_3_3">(인증정보 삭제 원할 시 0 입력 후 [인증])</string>
+    <string name="user_verification_text_4">전송되었습니다.</string>
+    <string name="request_notification_permission">알림을 허용하지 않으면 앱이 정상적으로 동작하지 않습니다.</string>
+</resources>

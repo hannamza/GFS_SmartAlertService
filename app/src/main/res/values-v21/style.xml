@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyTimePickerTheme" parent="android:Widget.Material.Light.TimePicker">
+        <item name="android:timePickerMode">spinner</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/orange_500</item>
+        ...
+        <item name="android:timePickerStyle">@style/MyTimePickerTheme</item>
+    </style>
+
+    <style name="Button1Style" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#FFCCBC</item>
+        <item name="colorButtonNormal">#FF5722</item>
+    </style>
+    <style name="Button2Style" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#E0F2F1</item>
+        <item name="colorButtonNormal">#009688</item>
+    </style>
+    <style name="Button3Style" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">#E91E63</item>
+        <item name="colorControlHighlight">#FCE4EC</item>
+    </style>
+
+    <style name="time_picker_dialog_style_light" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/orange_100</item>
+        <item name="android:timePickerStyle">@style/myTimePickerStyle</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/Button1Style</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/Button2Style</item>
+    </style>
+
+    <style name="myTimePickerStyle" parent="time_picker_dialog_style_light">
+        <item name="android:timePickerMode">spinner</item>
+    </style>
+
+    <style name="TimePickerButtonStyle" parent="time_picker_dialog_style_light">
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

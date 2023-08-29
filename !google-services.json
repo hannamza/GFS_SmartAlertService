@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "541703775875",
+    "project_id": "gfssmartalertservice",
+    "storage_bucket": "gfssmartalertservice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541703775875:android:e69dacbd36ccd161fd5db6",
+        "android_client_info": {
+          "package_name": "com.gfs.gfs_smartalert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541703775875-oriv2q4arc60ahaab6lkv91dihe9a4e8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQamXabGW8AkUNC1UA6ZTDpNCutwFdkqk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541703775875-oriv2q4arc60ahaab6lkv91dihe9a4e8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
